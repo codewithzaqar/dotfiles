@@ -1,0 +1,18 @@
+[user]
+	name = Zaqar Hakobyan
+	email = zaqarstandoff@gmail.com
+[core]
+	editor = vim
+[alias]
+	co = checkout
+	br = branch
+	ci = commit
+	st = status
+	lg = log --graph --date=short --pretty=format:'%C(yellow)%h%C(reset) %C(green)%ad%C(reset) %s %C(cyan)%an%C(reset)'
+[color]
+	ui = auto
+[color "diff"]
+	meta = yellow bold
+	frag = magenta bold
+	old = red bold
+	new = green bold
