@@ -5,12 +5,13 @@ set nocompatible                  " Must come first because it changes other opt
 
 let mapleader = ","
 
-let g:moria_style = "dark"
-colorscheme moria
+colorscheme molokai " cleanphp
+
+let g:molokai_original = 1
 
 silent! call pathogen#runtime_append_all_bundles()
 
-runtime macros/matchit.vim        " Load the matchit plugin.
+" runtime macros/matchit.vim        " Load the matchit plugin.
 
 set showcmd                       " Display incomplete commands.
 set showmode                      " Display the mode you're in.
@@ -111,3 +112,11 @@ map <leader>tm :tabmove
 
 map <Leader>t :FuzzyFinderTextMate<Enter>
 map <Leader>n :NERDTree<Enter>
+
+" YAML
+
+au BufNewFile,BufRead *.yaml, *.yml so ~/.vim/syntax/yaml.vim
+
+" FuzzyFinder
+let g:fuzzy_ceiling = 20000
+let g:fuzzy_matching_limit = 50
